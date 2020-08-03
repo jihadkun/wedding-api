@@ -1,0 +1,27 @@
+{
+    informasiMempelai:{
+        pria: {
+            nama
+            namaKeluarga
+        }
+        wanita: {
+            nama
+            namaKeluarga
+        }
+    },
+    informasiResepsi: {
+
+    }
+}
+Model : info
+    mempelaiPria: string
+    keluargaPria: string
+    mempelaiWanita: string
+    keluargaWanita: string
+    lokasi: string
+    waktu: date
+    kronologiPertemuan: string
+
+Model : ucapan
+    nama
+    komentar
