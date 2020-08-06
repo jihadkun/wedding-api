@@ -1,18 +1,3 @@
-{
-    informasiMempelai:{
-        pria: {
-            nama
-            namaKeluarga
-        }
-        wanita: {
-            nama
-            namaKeluarga
-        }
-    },
-    informasiResepsi: {
-
-    }
-}
 Model : info
     mempelaiPria: string
     keluargaPria: string
