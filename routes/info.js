@@ -37,6 +37,7 @@ router.post("/info", async function (req, res, next) {
       mempelaiWanita,
       keluargaWanita,
       lokasi,
+      tanggal,
       waktu,
       kronologiPertemuan,
     } = req.body;
@@ -46,6 +47,7 @@ router.post("/info", async function (req, res, next) {
       mempelaiWanita,
       keluargaWanita,
       lokasi,
+      tanggal,
       waktu,
       kronologiPertemuan,
     });
@@ -75,6 +77,7 @@ router.put("/info/:id", async function (req, res, next) {
       mempelaiWanita,
       keluargaWanita,
       lokasi,
+      tanggal,
       waktu,
       kronologiPertemuan,
     } = req.body;
@@ -85,6 +88,7 @@ router.put("/info/:id", async function (req, res, next) {
         mempelaiWanita,
         keluargaWanita,
         lokasi,
+        tanggal,
         waktu,
         kronologiPertemuan,
       },
@@ -101,6 +105,7 @@ router.put("/info/:id", async function (req, res, next) {
           keluargaPria,
           mempelaiWanita,
           keluargaWanita,
+          tanggal,
           lokasi,
           waktu,
           kronologiPertemuan,
