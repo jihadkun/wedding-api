@@ -4,9 +4,10 @@ module.exports = {
     await queryInterface.createTable("infos", {
       id: {
         allowNull: false,
-        autoIncrement: true,
+        autoIncrement: false,
         primaryKey: true,
         type: Sequelize.INTEGER,
+        defaultValue: 1,
       },
       mempelaiPria: {
         type: Sequelize.STRING,

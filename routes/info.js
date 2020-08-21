@@ -142,6 +142,7 @@ router.delete("/info/:id", async function (req, res, next) {
   }
 });
 
+// delete all data
 router.delete("/info", async function (req, res, next) {
   try {
     const delAllInfo = await model.info.destroy({ where: {} });
