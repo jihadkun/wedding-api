@@ -142,4 +142,21 @@ router.delete("/info/:id", async function (req, res, next) {
   }
 });
 
+router.delete("/info", async function (req, res, next) {
+  try {
+    const delAllInfo = await model.info.destroy({ where: {} });
+    if (delAllInfo) {
+      res.json({
+        status: "OK",
+        messages: "BERHASIL delete all info",
+      });
+    }
+  } catch (error) {
+    res.status(400).json({
+      status: "ERROR",
+      messages: error.messages,
+    });
+  }
+});
+
 module.exports = router;
